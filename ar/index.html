@@ -2,7 +2,10 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>حفل زفاف محمد وعلاء</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<title>حفل زفاف محمد وآلاء</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>
   :root{
@@ -197,7 +200,8 @@
   }
   .hero .amp{
     display:block;font-family:var(--serif);font-style:italic;
-    font-size:1.3rem;color:var(--gold);line-height:1.5;
+    font-size:.95rem;letter-spacing:.14em;color:var(--gold);line-height:1.6;
+    padding:4px 0;
   }
   .hero .request{
     font-style:italic;color:var(--ink);opacity:.85;
@@ -357,15 +361,16 @@
 
   /* ---- Arabic typography ---- */
   :root{
-    --serif:"Geeza Pro","Al Bayan","Noto Naskh Arabic",serif;
-    --script:"Diwan Thuluth","DecoType Naskh","Damascus","Geeza Pro","Noto Naskh Arabic",serif;
-    --body:"Geeza Pro","Noto Naskh Arabic",Georgia,serif;
-    --caps:"Geeza Pro","Noto Kufi Arabic","Noto Naskh Arabic",sans-serif;
+    --serif:"Amiri","Geeza Pro","Noto Naskh Arabic",serif;
+    --script:"Aref Ruqaa","Amiri","Geeza Pro","Noto Naskh Arabic",serif;
+    --body:"Amiri","Geeza Pro","Noto Naskh Arabic",serif;
+    --caps:"Amiri","Geeza Pro","Noto Naskh Arabic",serif;
   }
   .scene-title,.hint,.eyebrow,.env-card .inv,.count .lab,.tl-item .t,.hero .place,
   .dateline,.detail-block .time,.foot .tag,.btn,.lang-btn{letter-spacing:0}
   .scene-title strong{letter-spacing:0}
-  .hero .names{font-style:normal;font-size:clamp(2.3rem,10.5vw,3.1rem);line-height:1.7}
+  .hero .names{font-style:normal;font-size:clamp(2.2rem,10vw,3rem);line-height:1.85}
+  .hero .amp{font-style:normal;letter-spacing:0;font-size:1.05rem}
   .hero .amp,.hero .request,.band .until,.tl-item .d,.dress,.foot .bye{font-style:normal}
   .env-card .mono,.foot .mono{letter-spacing:.08em}
   .seal span{font-size:1rem;letter-spacing:0}
@@ -389,20 +394,20 @@
 <!-- ================= ENVELOPE ================= -->
 <div id="scene">
   <canvas id="petals" aria-hidden="true"></canvas>
-  <p class="scene-title">حفل زفاف<strong>محمد و علاء</strong></p>
+  <p class="scene-title">حفل زفاف<strong>محمد و آلاء</strong></p>
   <div class="env-wrap">
     <div class="env-float">
       <button id="envelope" aria-label="افتح الدعوة">
         <span class="env-shadow" aria-hidden="true"></span>
         <span class="env-back" aria-hidden="true"></span>
         <span class="env-card" aria-hidden="true">
-          <span class="mono">م &middot; ع</span>
+          <span class="mono">م &middot; آ</span>
           <span class="rule"></span>
           <span class="inv">أنتم مدعوّون</span>
         </span>
         <span class="env-pocket" aria-hidden="true"></span>
         <span class="env-flap" aria-hidden="true"></span>
-        <span class="seal" aria-hidden="true"><span>م&thinsp;ع</span></span>
+        <span class="seal" aria-hidden="true"><span>م&thinsp;آ</span></span>
       </button>
     </div>
   </div>
@@ -422,8 +427,8 @@
     </svg>
     <p class="eyebrow rv" style="--d:1">بدعوةٍ من عائلتيهما</p>
     <h1 class="names rv" style="--d:2">محمد
-      <span class="amp">و</span>
-      علاء</h1>
+      <span class="amp">وأميرته</span>
+      آلاء</h1>
     <p class="request rv" style="--d:3">يتشرّفان بدعوتكم لمشاركتهما فرحة زفافهما</p>
     <div class="dateline rv" style="--d:4"><i></i>٢٥ كانون الأول ٢٠٢٦<i></i></div>
     <p class="place rv" style="--d:5">مساء الجمعة &middot; الزبداني</p>
@@ -433,7 +438,7 @@
     <svg class="arch rv" width="200" height="190" viewBox="0 0 200 190" fill="none" aria-hidden="true">
       <path d="M30 186 V96 a70 70 0 0 1 140 0 V186" stroke="#B9924C" stroke-width="1.4" fill="none"/>
       <path d="M42 186 V98 a58 58 0 0 1 116 0 V186" stroke="#D8BC85" stroke-width="1" fill="none"/>
-      <text x="100" y="118" text-anchor="middle" font-family="Didot,Bodoni 72,Georgia,serif" font-size="30" letter-spacing="6" fill="#25382E">م&#183;ع</text>
+      <text x="100" y="118" text-anchor="middle" font-family="Didot,Bodoni 72,Georgia,serif" font-size="30" letter-spacing="6" fill="#25382E">م&#183;آ</text>
       <text x="100" y="142" text-anchor="middle" font-family="Avenir Next,Futura,Trebuchet MS,sans-serif" font-size="8" letter-spacing="4" fill="#B9924C">٢٥ &#183; ١٢ &#183; ٢٠٢٦</text>
       <ellipse cx="30" cy="170" rx="7" ry="3.2" fill="#C89B8C" transform="rotate(-40 30 170)"/>
       <ellipse cx="24" cy="182" rx="6" ry="2.8" fill="#B9924C" opacity=".7" transform="rotate(-15 24 182)"/>
@@ -478,7 +483,7 @@
   </section>
 
   <footer class="foot section">
-    <div class="mono rv">م &middot; ع</div>
+    <div class="mono rv">م &middot; آ</div>
     <p class="tag rv">#MohammadAndAlaa2026</p>
     <p class="bye rv">بفارغ الصبر ننتظر الاحتفال معكم.</p>
   </footer>
@@ -625,7 +630,7 @@
       "UID:mohammad-alaa-2026@wedding",
       "DTSTART:20261225T163000",
       "DTEND:20261225T230000",
-      "SUMMARY:حفل زفاف محمد وعلاء",
+      "SUMMARY:حفل زفاف محمد وآلاء",
       "LOCATION:صالة البر والإحسان - الزبداني",
       "DESCRIPTION:مراسم الزفاف الساعة ٤:٣٠ عصراً يليها العشاء والسهرة",
       "END:VEVENT","END:VCALENDAR"
